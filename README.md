@@ -1,2 +1,2 @@
 # Ro-Tracker_Documentation
-How to use the ro-tracker api.
+For any questions / bug reports please dm sufi1337 on discord.
