@@ -1,9 +1,9 @@
 import api.rotracker_api as RoTracker
 
 RoTracker = RoTracker.Ro_Tracker(
-    rotracker_apikey = "ssPx6jZUY309N2edvvCZ4Ep0k",
-    roblox_apikey = "wyJdaB9mgkO8HHSnaknNMf/ITUoDGe7GkaMY4F//cu7i9XQx",
-    universeid = 5940508014
+    rotracker_apikey = "1", # your ro-tracker key that you get through the command /getrotrackerapi in the bot's dms!
+    roblox_apikey = "uwu", # your roblox API key
+    universeid = 0 # the universe ID of your game
 )
 
 # ban user
