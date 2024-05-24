@@ -47,3 +47,12 @@ class Ro_Tracker():
         }
         return requests.get(f"{self._users_route}/getuserdata/{str(userid)}", headers = headers)
     
+    def kick_user(self, userid: str, reason: str) -> requests.Response:
+        headers = {
+            "Ro-Tracker-Key": self._tracker_key,
+            "Roblox-Api-Key": self._roblox_key,
+            "Roblox-Universe-Id": str(self._universeid),
+            "Kick-Reason": reason
+        }
+
+        return requests.post(f"{self._users_route}/kick/{str(userid)}", headers = headers)
