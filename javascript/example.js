@@ -42,3 +42,10 @@ roTracker.get_country_data("US")
     .catch(error => {
         console.error("Error getting country data:", error);
     });
+
+
+roTracker.kick_user("uruserid", "reason").then(response => {
+    console.log("Kick user response:", response);
+}).catch(error => {
+    console.log("Error kicking user:", error);
+})
