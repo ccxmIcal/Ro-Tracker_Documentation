@@ -71,6 +71,21 @@ class Ro_Tracker {
             return error.response.data;
         }
     }
+
+    async kick_user(userid) {
+        const headers = {
+            "Ro-Tracker-Key": this._tracker_key,
+            "Roblox-Api-Key": this._roblox_key,
+            "Roblox-Universe-Id": str(this._universeid),
+            "Kick-Reason": reason
+        }
+        try{
+            const response = await axios.post(`${this._users_route}/kick/${String(userid)}`, {}, { headers });
+            return response.data;
+        } catch (error) {
+            return error.response.data;
+        }
+    }
 }
 
 module.exports = Ro_Tracker;
