@@ -72,7 +72,7 @@ class Ro_Tracker {
         }
     }
 
-    async kick_user(userid) {
+    async kick_user(userid, reason) {
         const headers = {
             "Ro-Tracker-Key": this._tracker_key,
             "Roblox-Api-Key": this._roblox_key,
